@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>用户界面UI整理</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    <link href="css/flat-ui.css" rel="stylesheet">
+    <link href="css/demo.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="demo-headline">
+        <h1 class="demo-logo">
+          <div class="logo"></div>
+          界面UI
+					<small>用户界面UI工具汇集</small>
+					<small>叶永(yeyong14@gmail.com)收集整理2013-09</small>
+        </h1>
+      </div> <!-- /demo-headline -->
+
+      <h1 class="demo-section-title">基本元素</h1>
+      <h3 class="demo-panel-title">按钮</h3>
+
+      <div class="row demo-row">
+        <div class="col-md-3">
+          <a href="#fakelink" class="btn btn-block btn-lg btn-primary">主按钮按钮</a>
+        </div>
+        <div class="col-md-3">
+          <a href="#fakelink" class="btn btn-block btn-lg btn-warning">警告按钮</a>
+        </div>
+        <div class="col-md-3">
+          <a href="#fakelink" class="btn btn-block btn-lg">默认按钮</a>
+        </div>
+        <div class="col-md-3">
+          <a href="#fakelink" class="btn btn-block btn-lg btn-danger">危险按钮</a>
+        </div>
+      </div> <!-- /row -->
+
+      <div class="row demo-row">
+        <div class="col-md-3">
+          <a href="#fakelink" class="btn btn-block btn-lg btn-success">成功按钮</a>
+        </div>
+        <div class="col-md-3">
+          <a href="#fakelink" class="btn btn-block btn-lg btn-inverse">逆操作按钮</a>
+        </div>
+        <div class="col-md-3">
+          <a href="#fakelink" class="btn btn-block btn-lg btn-info">信息按钮</a>
+        </div>
+        <div class="col-md-3">
+          <a href="#fakelink" class="btn btn-block btn-lg disabled">禁用的按钮</a>
+        </div>
+      </div> <!-- /row -->
+
+      <h3 class="demo-panel-title">菜单</h3>
+      <div class="row demo-row">
+        <div class="col-md-9">
+          <div class="navbar navbar-inverse">
+          	<div class="navbar-header">
+	          	<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target="#nav-collapse-01"></button>
+          	</div>            
+            <div class="navbar-collapse collapse" id="nav-collapse-01">
+              <ul class="nav">
+                <li>
+                  <a href="#fakelink">
+                    项目菜单
+                    <span class="navbar-unread">1</span>
+                  </a>
+                </li>
+                <li class="active">
+                  <a href="#fakelink">
+                    消息
+                    <span class="navbar-unread">1</span>
+                  </a>
+                  <ul>
+                    <li><a href="#fakelink">第一个元素</a></li>
+                    <li>
+                      <a href="#fakelink">第二个元素</a>
+                      <ul>
+                        <li><a href="#fakelink">子元素1</a></li>
+                        <li><a href="#fakelink">子元素2</a></li>
+                        <li><a href="#fakelink">子元素3</a></li>
+                      </ul> <!-- /Sub menu -->
+                    </li>
+                    <li><a href="#fakelink">第三个元素</a></li>
+                  </ul> <!-- /Sub menu -->
+                </li>
+                <li>
+                  <a href="#fakelink">
+                    关于我们
+                  </a>
+                </li>
+              </ul>
+            </div><!--/.nav -->
+          </div>
+        </div>
+        <div class="col-md-3">
+          <select name="herolist" value="下拉菜单" class="select-block">
+            <option value="0">选择器</option>
+            <option value="1">项目一</option>
+            <option value="2">项目二</option>
+            <option value="3">项目三</option>
+            <option value="X-Men" selected="selected">子选择器</option>
+            <option value="Crocodile">选择器</option>
+          </select>
+        </div>
+      </div> <!-- /row -->
+
+      <h3 class="demo-panel-title">输入框</h3>
+      <div class="row">
+        <div class="col-md-3">
+          <input type="text" value="" placeholder="等待输入" class="form-control" />
+        </div>
+        <div class="col-md-3">
+          <div class="form-group has-error">
+            <input type="text" value="错误" class="form-control" />
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="form-group has-success">
+            <input type="text" value="成功" class="form-control" />
+            <i class="input-icon fui-check-inverted"></i>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <input type="text" value="禁用的输入框" disabled="disabled" class="form-control" />
+        </div>
+      </div> <!-- /row -->
+
+      <div class="row">
+        <div class="col-md-5">
+          <h3 class="demo-panel-title">进度条 &amp; 滑动块</h3>
+          <div class="progress">
+            <div class="progress-bar" style="width: 45%;"></div>
+          </div>
+          <br/>
+          <div class="progress">
+            <div class="progress-bar" style="width: 40%;"></div>
+            <div class="progress-bar progress-bar-warning" style="width: 10%;"></div>
+            <div class="progress-bar progress-bar-danger" style="width: 10%;"></div>
+            <div class="progress-bar progress-bar-success" style="width: 10%;"></div>
+            <div class="progress-bar progress-bar-info" style="width: 10%;"></div>
+          </div>
+          <br/>
+          <div id="slider" class="ui-slider">
+            <div class="ui-slider-segment"></div>
+            <div class="ui-slider-segment"></div>
+            <div class="ui-slider-segment"></div>
+          </div>
+        </div> <!-- /sliders -->
+
+        <div class="col-md-6 col-md-offset-1">
+          <h3 class="demo-panel-title">导航栏</h3>
+          <div class="row demo-navigation">
+            <div class="col-md-6">
+              <div class="btn-toolbar">
+                <div class="btn-group">
+                  <a class="btn btn-primary" href="#fakelink"><i class="fui-time"></i></a>
+                  <a class="btn btn-primary" href="#fakelink"><i class="fui-photo"></i></a>
+                  <a class="btn btn-primary active" href="#fakelink"><i class="fui-heart"></i></a>
+                  <a class="btn btn-primary" href="#fakelink"><i class="fui-eye"></i></a>
+                </div>
+              </div> <!-- /toolbar -->
+            </div>
+            <div class="col-md-6 demo-pager">
+              <ul class="pager">
+                <li class="previous">
+                  <a href="#fakelink">
+                    <i class="fui-arrow-left"></i>
+                    <span>全部信息</span>
+                  </a>
+                </li>
+                <li class="next">
+                  <a href="#fakelink">
+                    <i class="fui-arrow-right"></i>
+                  </a>
+                </li>
+              </ul> <!-- /pager -->
+            </div>
+          </div> <!-- /demo-navigation -->
+
+          <div class="pagination">
+            <ul>
+              <li class="previous"><a href="#fakelink" class="fui-arrow-left"></a></li>
+              <li class="active"><a href="#fakelink">1</a></li>
+              <li><a href="#fakelink">2</a></li>
+              <li><a href="#fakelink">3</a></li>
+              <li><a href="#fakelink">4</a></li>
+              <li><a href="#fakelink">5</a></li>
+              <li><a href="#fakelink">6</a></li>
+              <li><a href="#fakelink">7</a></li>
+              <li><a href="#fakelink">8</a></li>
+              <li class="next"><a href="#fakelink" class="fui-arrow-right"></a></li>
+            </ul>
+          </div> <!-- /pagination -->
+        </div> <!-- /navigation -->
+      </div> <!-- /row -->
+
+      <div class="row">
+        <div class="col-md-3">
+          <h3 class="demo-panel-title">复选框</h3>
+          <label class="checkbox" for="checkbox1">
+            <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+            取消选择
+          </label>
+          <label class="checkbox" for="checkbox2">
+            <input type="checkbox" checked="checked" value="" id="checkbox2" data-toggle="checkbox" checked="">
+            默认选择
+          </label>
+          <label class="checkbox" for="checkbox3">
+            <input type="checkbox" value="" id="checkbox3" data-toggle="checkbox" disabled="">
+            禁用的不能选择
+          </label>
+          <label class="checkbox" for="checkbox4">
+            <input type="checkbox" checked="checked" value="" id="checkbox4" data-toggle="checkbox" disabled="" checked="">
+            禁用默认选择不能更改
+          </label>
+        </div> <!-- /checkboxes col-md-3 -->
+
+        <div class="col-md-3">
+          <h3 class="demo-panel-title">单选按钮</h3>
+          <label class="radio">
+            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" data-toggle="radio">
+            等待选择
+          </label>
+          <label class="radio">
+            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option1" data-toggle="radio" checked="">
+            默认选择
+          </label>
+
+          <label class="radio">
+            <input type="radio" name="optionsRadiosDisabled" id="optionsRadios3" value="option2" data-toggle="radio" disabled="">
+            禁用不能选择
+          </label>
+          <label class="radio">
+            <input type="radio" name="optionsRadiosDisabled" id="optionsRadios4" value="option2" data-toggle="radio" checked="" disabled="">
+            禁用选择好不能更改
+          </label>
+        </div> <!-- /radios col-md-3 -->
+
+        <div class="col-md-3">
+          <h3 class="demo-panel-title">开关</h3>
+
+          <table width="100%">
+            <tr>
+              <td width="50%" class="pbm">
+                <input type="checkbox" checked="" data-toggle="switch" />
+              </td>
+
+              <td class="pbm">
+                <input type="checkbox" data-toggle="switch" />
+              </td>
+            </tr>
+            <tr>
+              <td class="pbm">
+                <div class="switch switch-square"
+                  data-on-label="<i class='fui-check'></i>"
+                  data-off-label="<i class='fui-cross'></i>">
+                  <input type="checkbox" />
+                </div>
+              </td>
+
+              <td class="pbm">
+                <div class="switch switch-square"
+                  data-on-label="<i class='fui-check'></i>"
+                  data-off-label="<i class='fui-cross'></i>">
+                  <input type="checkbox" checked="" />
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" disabled data-toggle="switch" />
+              </td>
+
+              <td>
+                <input type="checkbox" checked disabled data-toggle="switch" />
+              </td>
+            </tr>
+          </table>
+        </div> <!-- /toggles col-md-3 -->
+
+        <div class="col-md-3">
+          <h3 class="demo-panel-title">标签</h3>
+          <input name="tagsinput" id="tagsinput" class="tagsinput" value="一个,二个,三个,四个" />
+        </div>
+      </div> <!-- /row -->
+
+      <div class="row">
+        <div class="col-md-3">
+          <h3 class="demo-panel-title">分享</h3>
+          <div class="share mrl">
+            <ul>
+              <li>
+                <label class="share-label" for="share-toggle2">Facebook</label>
+                <input type="checkbox" data-toggle="switch" />
+              </li>
+              <li>
+                <label class="share-label" for="share-toggle4">Twitter</label>
+                <input type="checkbox" checked="" data-toggle="switch" />
+              </li>
+              <li>
+                <label class="share-label" for="share-toggle6">Pinterest</label>
+                <input type="checkbox" data-toggle="switch" />
+              </li>
+            </ul>
+            <a href="#" class="btn btn-primary btn-block btn-large">分享</a>
+          </div> <!-- /share -->
+        </div>
+
+        <div class="col-md-3">
+          <div class="demo-tooltips">
+            <h3 class="demo-panel-title">提示</h3>
+            <p align="center" data-toggle="tooltip" data-placement="bottom" title="想下的提示文本."></p>
+            <p align="center" data-toggle="tooltip" title="向上的多文本提示文本."></p>
+          </div>
+        </div> <!-- /col-md-3 with tooltips -->
+      </div> <!-- /row -->
+      
+      <div class="demo-row typography-row">
+      	<div class="demo-title">
+      		<h3 class="demo-panel-title">排版</h3>
+      	</div>
+      	<div class="demo-content">      		
+      		<div class="demo-type-example">
+	      		<h1><span class="demo-heading-note">标题 1</span>Showers across the W</h1>
+      		</div>
+      		<div class="demo-type-example">
+	      		<h2><span class="demo-heading-note">标题 2</span>Give this quartet a few</h2>
+      		</div>
+      		<div class="demo-type-example">
+	      		<h3><span class="demo-heading-note">标题 3</span>The Vatican transitions to a</h3>
+      		</div>
+      		<div class="demo-type-example">
+	      		<h4><span class="demo-heading-note">标题 4</span>Great American Bites: Telluride's Oak, The</h4>
+      		</div>
+      		<div class="demo-type-example">
+	      		<h5><span class="demo-heading-note">标题 5</span>Author Diane Alberts loves her some good</h5>
+      		</div>
+      		<div class="demo-type-example">
+	      		<h6><span class="demo-heading-note">标题 6</span>With the success of young-adult book-to-movie</h6>
+      		</div>
+      		<div class="demo-type-example">
+	      		<span class="demo-text-note">Paragraph</span>
+	          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. <strong>Donec ullamcorper</strong> nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+      		</div>
+      		<div class="demo-type-example">
+	      		<span class="demo-text-note">图像</span>
+	          <img src="images/exaple-image.jpg" alt="exaple-image" class="img-rounded img-responsive">
+	          <p class="img-comment"><strong>Note:</strong> gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+      		</div>
+      		<div class="demo-type-example">
+	      		<span class="demo-text-note">引导文字</span>
+						<p class="lead">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+      		</div>
+      		<div class="demo-type-example">
+	      		<span class="demo-text-note">引用</span>
+	          <blockquote>
+	            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus.</p>
+	            <small>Steve Jobs, CEO Apple</small>
+	          </blockquote>
+      		</div>
+      		<div class="demo-type-example">
+	      		<span class="demo-text-note">小字体</span>
+	          <p><small>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</small></p>
+      		</div>
+      	</div><!-- /.demo-content-wide -->
+      </div><!-- /.demo-row -->
+
+      <h3 class="demo-panel-title">色板</h3>
+      <div class="row demo-swatches-row">
+	      <div class="swatches-col">
+		      <div class="pallete-item">
+			      <dl class="palette palette-turquoise">
+                <dt>#1abc9c</dt>
+                <dd>Turquoise</dd>
+              </dl>
+              <dl class="palette palette-green-sea">
+                <dt>#16a085</dt>
+                <dd>Green sea</dd>
+              </dl>
+		      </div>
+		      <div class="pallete-item">
+			      <dl class="palette palette-emerald">
+              <dt>#2ecc71</dt>
+              <dd>Emerald</dd>
+            </dl>
+            <dl class="palette palette-nephritis">
+              <dt>#27ae60</dt>
+              <dd>Nephritis</dd>
+            </dl>
+		      </div>
+		      <div class="pallete-item">
+			      <dl class="palette palette-peter-river">
+              <dt>#3498db</dt>
+              <dd>Peter river</dd>
+            </dl>
+            <dl class="palette palette-belize-hole">
+              <dt>#2980b9</dt>
+              <dd>Belize hole</dd>
+            </dl>
+		      </div>
+		      <div class="pallete-item">
+			      <dl class="palette palette-amethyst">
+              <dt>#9b59b6</dt>
+              <dd>Amethyst</dd>
+            </dl>
+            <dl class="palette palette-wisteria">
+              <dt>#8e44ad</dt>
+              <dd>Wisteria</dd>
+            </dl>
+		      </div>
+		      <div class="pallete-item">
+			      <dl class="palette palette-wet-asphalt">
+              <dt>#34495e</dt>
+              <dd>Wet asphalt</dd>
+            </dl>
+            <dl class="palette palette-midnight-blue">
+              <dt>#2c3e50</dt>
+              <dd>Midnight blue</dd>
+            </dl>
+		      </div>
+		      <div class="pallete-item">
+			      <dl class="palette palette-sun-flower">
+              <dt>#f1c40f</dt>
+              <dd>Sun flower</dd>
+            </dl>
+            <dl class="palette palette-orange">
+              <dt>#f39c12</dt>
+              <dd>Orange</dd>
+            </dl>
+		      </div>
+		      <div class="pallete-item">
+			      <dl class="palette palette-carrot">
+              <dt>#e67e22</dt>
+              <dd>Carrot</dd>
+            </dl>
+            <dl class="palette palette-pumpkin">
+              <dt>#d35400</dt>
+              <dd>Pumpkin</dd>
+            </dl>
+		      </div>
+		      <div class="pallete-item">
+			      <dl class="palette palette-alizarin">
+              <dt>#e74c3c</dt>
+              <dd>Alizarin</dd>
+            </dl>
+            <dl class="palette palette-pomegranate">
+              <dt>#c0392b</dt>
+              <dd>Pomegranate</dd>
+            </dl>
+		      </div>
+		      <div class="pallete-item">
+			      <dl class="palette palette-clouds">
+              <dt>#ecf0f1</dt>
+              <dd>Clouds</dd>
+            </dl>
+            <dl class="palette palette-silver">
+              <dt>#bdc3c7</dt>
+              <dd>Silver</dd>
+            </dl>
+		      </div>
+		      <div class="pallete-item">
+			      <dl class="palette palette-concrete">
+              <dt>#95a5a6</dt>
+              <dd>Concrete</dd>
+            </dl>
+            <dl class="palette palette-asbestos">
+              <dt>#7f8c8d</dt>
+              <dd>Asbestos</dd>
+            </dl>
+		      </div>
+	      </div> <!-- /swatches items -->
+	      <div class="swatches-desc-col">
+		      <h6 class="palette-headline">色板</h6>
+          <p class="palette-paragraph">
+            Colors &mdash; is almost the most important part of the <strong>Flat UI</strong>. Better to use different shades of provided colors than new.
+          </p>
+          <p class="palette-paragraph">
+            For your convenience we also provide <strong>Swatches Preset</strong> <span>(flat&#8209;ui&#8209;swatches.aco in the Pack folder).</span>
+          </p>
+          <p class="palette-paragraph">
+            <strong>No gradients, no shadows.</strong>
+          </p>
+	      </div> <!-- /swatches desc -->
+      </div> <!-- /swatches row -->
+
+      <h3 class="demo-panel-title">图标 <small>(14)</small></h3>
+      <div class="demo-illustrations">
+        <div class="demo-content">
+          <div><img src="images/icons/svg/toilet-paper.svg" alt="Toilet-Paper"></div>          
+          <div><img src="images/icons/svg/gift-box.svg" alt="Gift-Box"></div>
+          <div><img src="images/icons/svg/pencils.svg" alt="Pensils"></div>
+          <div><img src="images/icons/svg/clipboard.svg" alt="Clipboard"></div>
+          <div><img src="images/icons/svg/retina.svg" alt="Retina"></div>
+          <div><img src="images/icons/svg/compas.svg" alt="Compas"></div>
+          <div><img src="images/icons/svg/map.svg" alt="Map"></div>
+          <div><img src="images/icons/svg/chat.svg" alt="Chat"></div>
+          <div><img src="images/icons/svg/mail.svg" alt="Mail"></div>
+          <div><img src="images/icons/svg/book.svg" alt="Book"></div>
+          <div><img src="images/icons/svg/calendar.svg" alt="Calendar"></div>
+          <div><img src="images/icons/svg/paper-bag.svg" alt="Pocket"></div>
+          <div><img src="images/icons/svg/clocks.svg" alt="Watches"></div>
+          <div><img src="images/icons/svg/loop.svg" alt="Infinity-Loop"></div>
+        </div>
+      </div>
+
+
+      <h3 class="demo-panel-title">Glyphs（不知道怎么翻译） <small>(30)</small></h3>
+      <div class="demo-icons">        
+        <div class="demo-content">
+          <span class="fui-arrow-right"></span>
+          <span class="fui-arrow-left"></span>
+          <span class="fui-cmd"></span>
+          <span class="fui-check-inverted"></span>
+          <span class="fui-heart"></span>
+          <span class="fui-location"></span>
+          <span class="fui-plus"></span>
+          <span class="fui-check"></span>
+          <span class="fui-cross"></span>
+          <span class="fui-list"></span>
+          <span class="fui-new"></span>
+          <span class="fui-video"></span>
+          <span class="fui-photo"></span>
+          <span class="fui-volume"></span>
+          <span class="fui-time"></span>
+          <span class="fui-eye"></span>
+          <span class="fui-chat"></span>
+          <span class="fui-search"></span>
+          <span class="fui-user"></span>
+          <span class="fui-mail"></span>
+          <span class="fui-lock"></span>
+          <span class="fui-gear"></span>
+          <span class="fui-radio-unchecked"></span>
+          <span class="fui-radio-checked"></span>
+          <span class="fui-checkbox-unchecked"></span>
+          <span class="fui-checkbox-checked"></span>
+          <span class="fui-calendar-solid"></span>
+          <span class="fui-pause"></span>
+          <span class="fui-play"></span>
+          <span class="fui-check-inverted-2"></span>
+        </div>
+      </div> <!-- /icon font row -->
+
+      <h1 class="demo-section-title mbl pbl">实例样本</h1>
+      <div class="row demo-samples">
+        <div class="col-md-4">
+          <div class="todo">
+            <div class="todo-search">
+              <input class="todo-search-field" type="search" value="" placeholder="Search" />
+            </div>
+            <ul>
+              <li class="todo-done">
+                <div class="todo-icon fui-user"></div>
+                <div class="todo-content">
+                  <h4 class="todo-name">
+                    Meet <strong>Adrian</strong> at <strong>6pm</strong>
+                  </h4>
+                  Times Square
+                </div>
+              </li>
+              <li>
+                <div class="todo-icon fui-list"></div>
+                <div class="todo-content">
+                  <h4 class="todo-name">
+                    Chat with <strong>V.Kudinov</strong>
+                  </h4>
+                  Skype conference an 9 am
+                </div>
+              </li>
+              <li>
+                <div class="todo-icon fui-eye"></div>
+                <div class="todo-content">
+                  <h4 class="todo-name">
+                    Watch <strong>Iron Man</strong>
+                  </h4>
+                  1998 Broadway
+                </div>
+              </li>
+              <li>
+                <div class="todo-icon fui-time"></div>
+                <div class="todo-content">
+                  <h4 class="todo-name">
+                    Fix bug on a <strong>Website</strong>
+                  </h4>
+                  As soon as possible
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div> <!-- /todo list -->
+
+        <div class="col-md-8 demo-video">
+          <!--[if !IE]> -->
+            <video class="video-js" controls
+              preload="auto" width="620" height="349" poster="images/video/poster.jpg" data-setup="{}">
+              <source src="http://iurevych.github.com/Flat-UI-videos/big_buck_bunny.mp4" type="video/mp4">
+              <source src="http://iurevych.github.com/Flat-UI-videos/big_buck_bunny.webm" type="video/webm">
+            </video>
+          <!-- <![endif]-->
+
+          <!--[if IE]>
+            <video class="video-js" controls
+              preload="auto" width="620" height="256" poster="http://video-js.zencoder.com/oceans-clip.jpg" data-setup="{}">
+              <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4'/>
+              <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm'/>
+            </video>
+          <![endif]-->
+        </div> <!-- /video -->
+      </div>
+
+      <div class="row demo-tiles">
+        <div class="col-md-3">
+          <div class="tile">
+            <img src="images/icons/svg/compas.svg" alt="Compas" class="tile-image big-illustration">
+            <h3 class="tile-title">Web Oriented</h3>
+            <p>100% convertable to HTML/CSS layout.</p>
+            <a class="btn btn-primary btn-large btn-block" href="http://designmodo.com/flat">Get Pro</a>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="tile">
+            <img src="images/icons/svg/loop.svg" alt="Infinity-Loop" class="tile-image">
+            <h3 class="tile-title">Easy to Customize</h3>
+            <p>Vector-based shapes and minimum of layer styles.</p>
+            <a class="btn btn-primary btn-large btn-block" href="http://designmodo.com/flat">Get Pro</a>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="tile">
+            <img src="images/icons/svg/pencils.svg" alt="Pensils" class="tile-image">
+            <h3 class="tile-title">Color Swatches</h3>
+            <p>Easy to add or change elements. </p>
+            <a class="btn btn-primary btn-large btn-block" href="http://designmodo.com/flat">Get Pro</a>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="tile tile-hot">
+            <img src="images/icons/svg/chat.svg" alt="Chat" class="tile-image">
+            <h3 class="tile-title">Free for Share</h3>
+            <p>Your likes, shares and comments helps us.</p>
+            <a class="btn btn-primary btn-large btn-block" href="http://designmodo.com/flat">Get Pro</a>
+          </div>
+
+        </div>
+      </div> <!-- /tiles -->
+
+      <div class="login">
+        <div class="login-screen">
+          <div class="login-icon">
+            <img src="images/login/icon.png" alt="Welcome to Mail App" />
+            <h4>欢迎来到<small>Mail App</small></h4>
+          </div>
+
+          <div class="login-form">
+            <div class="form-group">
+              <input type="text" class="form-control login-field" value="" placeholder="输入用户名" id="login-name" />
+              <label class="login-field-icon fui-user" for="login-name"></label>
+            </div>
+
+            <div class="form-group">
+              <input type="password" class="form-control login-field" value="" placeholder="密码" id="login-pass" />
+              <label class="login-field-icon fui-lock" for="login-pass"></label>
+            </div>
+
+            <a class="btn btn-primary btn-lg btn-block" href="#">登录</a>
+            <a class="login-link" href="#">输入你的密码</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-9">
+          <div class="demo-browser">
+            <div class="demo-browser-side">
+              <div class="demo-browser-author"></div>
+              <div class="demo-browser-action">
+                <a class="btn btn-danger btn-lg btn-block" href="#" target="_blank">
+                  Follow
+                </a>
+              </div>
+              <h5>@monstercritic</h5>
+              <h6>
+                Tourist. Designer. NYC
+                <a href="#" target="_blank">shmidt.in</a>
+              </h6>
+            </div>
+            <div class="demo-browser-content">
+              <img src="images/demo/browser-pic-1.jpg" alt="" />
+              <img src="images/demo/browser-pic-2.jpg" alt="" />
+              <img src="images/demo/browser-pic-3.jpg" alt="" />
+              <img src="images/demo/browser-pic-4.jpg" alt="" />
+              <img src="images/demo/browser-pic-5.jpg" alt="" />
+              <img src="images/demo/browser-pic-6.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="demo-download">
+            <img src="images/demo/html-icon.png" src="Free PSD" />
+          </div>
+
+          <a href="#" class="btn btn-primary btn-lg btn-block">Download</a>
+
+          <p class="demo-download-text">Your likes, shares and comments make us happy!</p>
+        </div>
+      </div> <!-- /download area -->
+
+    </div> <!-- /container -->
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <h3 class="footer-title">Subscribe</h3>
+
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <!-- Load JS here for greater good =============================-->
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/bootstrap-switch.js"></script>
+    <script src="js/flatui-checkbox.js"></script>
+    <script src="js/flatui-radio.js"></script>
+    <script src="js/jquery.tagsinput.js"></script>
+    <script src="js/jquery.placeholder.js"></script>
+    <script src="js/jquery.stacktable.js"></script>
+    <script src="http://vjs.zencdn.net/4.1/video.js"></script>
+    <script src="js/application.js"></script>
+  </body>
+</html>
